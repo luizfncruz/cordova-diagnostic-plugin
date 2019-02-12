@@ -50,15 +50,15 @@
         <framework src="CoreLocation.framework" />
 
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" comment="Default usage descriptions: override as necessary in .plist">
-            <string>This app requires access to your location when the screen is on and the app is displayed.</string>
+            <string>Precisamos de acesso à sua localização enquanto a tela estiver ativa para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" comment="iOS 11 or greater">
-            <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
+            <string>Precisamos de acesso à sua localização para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" comment="iOS 10 or below">
-            <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
+            <string>Precisamos de acesso à sua localização para que o aplicativo funcione corretamente.</string>
         </config-file>
         <!--END_MODULE LOCATION-->
 
@@ -80,7 +80,7 @@
         <framework src="CoreBluetooth.framework" />
 
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
-            <string>This app requires bluetooth access to function properly.</string>
+            <string>Precisamos de acesso ao bluetooth para que o aplicativo funcione corretamente.</string>
         </config-file>
         <!--END_MODULE BLUETOOTH-->
 
@@ -116,11 +116,11 @@
         <framework src="AVFoundation.framework" />
 
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-            <string>This app requires camera access to function properly.</string>
+            <string>Precisamos de acesso à câmera para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-            <string>This app requires photo library access to function properly.</string>
+            <string>Precisamos de acesso à biblioteca de fotos para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Camera.h" />
@@ -160,7 +160,7 @@
         <framework src="AVFoundation.framework" />
 
         <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
-            <string>This app requires microphone access to function properly.</string>
+            <string>Precisamos de acesso ao microfone para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Microphone.h" />
@@ -183,7 +183,7 @@
         <framework src="AddressBook.framework" />
 
         <config-file target="*-Info.plist" parent="NSContactsUsageDescription">
-            <string>This app requires contacts access to function properly.</string>
+            <string>Precisamos de acesso aos contatos para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Contacts.h" />
@@ -205,7 +205,7 @@
         <framework src="EventKit.framework" />
 
         <config-file target="*-Info.plist" parent="NSCalendarsUsageDescription">
-            <string>This app requires calendar access to function properly.</string>
+            <string>Precisamos de acesso ao calendário para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Calendar.h" />
@@ -227,7 +227,7 @@
         <framework src="EventKit.framework" />
 
         <config-file target="*-Info.plist" parent="NSRemindersUsageDescription">
-            <string>This app requires reminders access to function properly.</string>
+            <string>Precisamos de acesso aos lembretes para que o aplicativo funcione corretamente.</string>
         </config-file>
         
         <header-file src="src/ios/Diagnostic_Reminders.h" />
@@ -249,7 +249,7 @@
         <framework src="CoreMotion.framework" />
 
         <config-file target="*-Info.plist" parent="NSMotionUsageDescription">
-            <string>This app requires motion detection access to function properly.</string>
+            <string>Precisamos de acesso ao detector de movimentos para que o aplicativo funcione corretamente.</string>
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Motion.h" />
@@ -275,7 +275,7 @@
         <framework src="com.android.support:appcompat-v7:26.+" />
 
         <!--BEGIN_MODULE LOCATION-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Location" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Location"/>
                 <param name="onload" value="true" />
@@ -286,11 +286,11 @@
             <merges target="cordova.plugins.diagnostic.location" />
         </js-module>
 
-        <source-file src="src/android/Diagnostic_Location.java" target-dir="src/cordova/plugins" />
+        <source-file src="src/android/Diagnostic_Location.java" target-dir="src/cordova/plugins" /> -->
         <!--END_MODULE LOCATION-->
 
         <!--BEGIN_MODULE BLUETOOTH-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Bluetooth" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Bluetooth"/>
                 <param name="onload" value="true" />
@@ -305,11 +305,11 @@
             <merges target="cordova.plugins.diagnostic.bluetooth" />
         </js-module>
 
-        <source-file src="src/android/Diagnostic_Bluetooth.java" target-dir="src/cordova/plugins" />
+        <source-file src="src/android/Diagnostic_Bluetooth.java" target-dir="src/cordova/plugins" /> -->
         <!--END_MODULE BLUETOOTH-->
 
         <!--BEGIN_MODULE WIFI-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Wifi" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Wifi"/>
                 <param name="onload" value="true" />
@@ -320,7 +320,7 @@
             <merges target="cordova.plugins.diagnostic.wifi" />
         </js-module>
 
-        <source-file src="src/android/Diagnostic_Wifi.java" target-dir="src/cordova/plugins" />
+        <source-file src="src/android/Diagnostic_Wifi.java" target-dir="src/cordova/plugins" /> -->
         <!--END_MODULE WIFI-->
 
         <!--BEGIN_MODULE CAMERA-->
@@ -339,7 +339,7 @@
         <!--END_MODULE CAMERA-->
 
         <!--BEGIN_MODULE NOTIFICATIONS-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Notifications" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Notifications"/>
                 <param name="onload" value="true" />
@@ -350,7 +350,7 @@
             <merges target="cordova.plugins.diagnostic.notifications" />
         </js-module>
 
-        <source-file src="src/android/Diagnostic_Notifications.java" target-dir="src/cordova/plugins" />
+        <source-file src="src/android/Diagnostic_Notifications.java" target-dir="src/cordova/plugins" /> -->
         <!--END_MODULE NOTIFICATIONS-->
 
         <!--BEGIN_MODULE MICROPHONE-->
@@ -360,19 +360,19 @@
         <!--END_MODULE MICROPHONE-->
 
         <!--BEGIN_MODULE CONTACTS-->
-        <js-module name="Diagnostic_Contacts" src="www/android/diagnostic.contacts.js">
+        <!-- <js-module name="Diagnostic_Contacts" src="www/android/diagnostic.contacts.js">
             <merges target="cordova.plugins.diagnostic.contacts" />
-        </js-module>
+        </js-module> -->
         <!--END_MODULE CONTACTS-->
 
         <!--BEGIN_MODULE CALENDAR-->
-        <js-module name="Diagnostic_Calendar" src="www/android/diagnostic.calendar.js">
+        <!-- <js-module name="Diagnostic_Calendar" src="www/android/diagnostic.calendar.js">
             <merges target="cordova.plugins.diagnostic.calendar" />
-        </js-module>
+        </js-module> -->
         <!--END_MODULE CALENDAR-->
 
         <!--BEGIN_MODULE NFC-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_NFC" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_NFC"/>
                 <param name="onload" value="true" />
@@ -383,7 +383,7 @@
             <merges target="cordova.plugins.diagnostic.nfc" />
         </js-module>
 
-        <source-file src="src/android/Diagnostic_NFC.java" target-dir="src/cordova/plugins" />
+        <source-file src="src/android/Diagnostic_NFC.java" target-dir="src/cordova/plugins" /> -->
         <!--END_MODULE NFC-->
 
         <!--BEGIN_MODULE EXTERNAL_STORAGE-->
