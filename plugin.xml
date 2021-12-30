@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova.plugins.diagnostic"
-    version="4.0.11">
+    version="4.0.10">
 
     <name>Diagnostic</name>
     <description>Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.</description>
@@ -33,7 +33,7 @@
         <source-file src="src/ios/Diagnostic.m" />
 
         <!--BEGIN_MODULE LOCATION-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Location">
                 <param name="ios-package" value="Diagnostic_Location" />
                 <param name="onload" value="true" />
@@ -59,11 +59,11 @@
 
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" comment="iOS 10 or below">
             <string>Precisamos de acesso à sua localização para que o aplicativo funcione corretamente.</string>
-        </config-file-->
+        </config-file>
         <!--END_MODULE LOCATION-->
 
         <!--BEGIN_MODULE BLUETOOTH-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Bluetooth">
                 <param name="ios-package" value="Diagnostic_Bluetooth" />
                 <param name="onload" value="true" />
@@ -81,11 +81,11 @@
 
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
             <string>Precisamos de acesso ao bluetooth para que o aplicativo funcione corretamente.</string>
-        </config-file-->
+        </config-file>
         <!--END_MODULE BLUETOOTH-->
 
         <!--BEGIN_MODULE WIFI-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Wifi">
                 <param name="ios-package" value="Diagnostic_Wifi" />
                 <param name="onload" value="true" />
@@ -97,7 +97,7 @@
         </js-module>
 
         <header-file src="src/ios/Diagnostic_Wifi.h" />
-        <source-file src="src/ios/Diagnostic_Wifi.m" /-->
+        <source-file src="src/ios/Diagnostic_Wifi.m" />
         <!--END_MODULE WIFI-->
 
         <!--BEGIN_MODULE CAMERA-->
@@ -128,7 +128,7 @@
         <!--END_MODULE CAMERA-->
 
         <!--BEGIN_MODULE NOTIFICATIONS-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Notifications">
                 <param name="ios-package" value="Diagnostic_Notifications" />
                 <param name="onload" value="true" />
@@ -142,7 +142,7 @@
         </js-module>
 
         <header-file src="src/ios/Diagnostic_Notifications.h" />
-        <source-file src="src/ios/Diagnostic_Notifications.m" /-->
+        <source-file src="src/ios/Diagnostic_Notifications.m" />
         <!--END_MODULE NOTIFICATIONS-->
 
         <!--BEGIN_MODULE MICROPHONE-->
@@ -168,7 +168,7 @@
         <!--END_MODULE MICROPHONE-->
 
         <!--BEGIN_MODULE CONTACTS-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Contacts">
                 <param name="ios-package" value="Diagnostic_Contacts" />
                 <param name="onload" value="true" />
@@ -187,11 +187,11 @@
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Contacts.h" />
-        <source-file src="src/ios/Diagnostic_Contacts.m" /-->
+        <source-file src="src/ios/Diagnostic_Contacts.m" />
         <!--END_MODULE CONTACTS-->
 
         <!--BEGIN_MODULE CALENDAR-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Calendar">
                 <param name="ios-package" value="Diagnostic_Calendar" />
                 <param name="onload" value="true" />
@@ -209,11 +209,11 @@
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Calendar.h" />
-        <source-file src="src/ios/Diagnostic_Calendar.m" /-->
+        <source-file src="src/ios/Diagnostic_Calendar.m" />
         <!--END_MODULE CALENDAR-->
 
         <!--BEGIN_MODULE REMINDERS-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Reminders">
                 <param name="ios-package" value="Diagnostic_Reminders" />
                 <param name="onload" value="true" />
@@ -231,11 +231,11 @@
         </config-file>
         
         <header-file src="src/ios/Diagnostic_Reminders.h" />
-        <source-file src="src/ios/Diagnostic_Reminders.m" /-->
+        <source-file src="src/ios/Diagnostic_Reminders.m" />
         <!--END_MODULE REMINDERS-->
 
         <!--BEGIN_MODULE MOTION-->
-        <!--config-file target="config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Motion">
                 <param name="ios-package" value="Diagnostic_Motion" />
                 <param name="onload" value="true" />
@@ -253,7 +253,7 @@
         </config-file>
 
         <header-file src="src/ios/Diagnostic_Motion.h" />
-        <source-file src="src/ios/Diagnostic_Motion.m" /-->
+        <source-file src="src/ios/Diagnostic_Motion.m" />
         <!--END_MODULE MOTION-->
     </platform>
 
