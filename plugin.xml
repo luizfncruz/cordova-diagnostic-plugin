@@ -63,10 +63,10 @@
         <!--END_MODULE LOCATION-->
 
         <!--BEGIN_MODULE BLUETOOTH-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Bluetooth">
                 <param name="ios-package" value="Diagnostic_Bluetooth" />
-                <param name="onload" value="true" />
+                <param name="onload" value="false" />
             </feature>
         </config-file>
 
@@ -81,7 +81,7 @@
 
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
             <string>Precisamos de acesso ao bluetooth para que o aplicativo funcione corretamente.</string>
-        </config-file>
+        </config-file> -->
         <!--END_MODULE BLUETOOTH-->
 
         <!--BEGIN_MODULE WIFI-->
