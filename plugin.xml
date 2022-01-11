@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova.plugins.diagnostic"
-    version="4.0.10">
+    version="4.0.13">
 
     <name>Diagnostic</name>
     <description>Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.</description>
@@ -14,8 +14,8 @@
         <engine name="cordova-android" version=">=6.3.0"/>
         <engine name="cordova-ios" version=">=4.3.0"/>
     </engines>
-    <repo>https://github.com/dpa99c/cordova-diagnostic-plugin.git</repo>
-    <issue>https://github.com/dpa99c/cordova-diagnostic-plugin/issues</issue>
+    <repo>https://github.com/luizfncruz/cordova-diagnostic-plugin.git</repo>
+    <issue>https://github.com/luizfncruz/cordova-diagnostic-plugin/issues</issue>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
@@ -128,7 +128,7 @@
         <!--END_MODULE CAMERA-->
 
         <!--BEGIN_MODULE NOTIFICATIONS-->
-        <config-file target="config.xml" parent="/*">
+        <!-- <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Notifications">
                 <param name="ios-package" value="Diagnostic_Notifications" />
                 <param name="onload" value="true" />
@@ -142,7 +142,7 @@
         </js-module>
 
         <header-file src="src/ios/Diagnostic_Notifications.h" />
-        <source-file src="src/ios/Diagnostic_Notifications.m" />
+        <source-file src="src/ios/Diagnostic_Notifications.m" /> -->
         <!--END_MODULE NOTIFICATIONS-->
 
         <!--BEGIN_MODULE MICROPHONE-->
